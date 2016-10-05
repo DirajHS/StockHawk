@@ -90,7 +90,7 @@ public class Utils {
             try {
 
                 String change = jsonObject.getString(AppConstants.JSON_CHANGE);
-                builder.withValue(QuoteColumns.SYMBOL, jsonObject.getString("symbol"));
+                builder.withValue(QuoteColumns.SYMBOL, jsonObject.getString(AppConstants.SYMBOL));
                 builder.withValue(QuoteColumns.BIDPRICE, truncateBidPrice(jsonObject.getString(AppConstants.JSON_BID)));
                 builder.withValue(QuoteColumns.PERCENT_CHANGE, truncateChange(
                         jsonObject.getString(AppConstants.JSON_CHANGE_PERCENTAGE), true));

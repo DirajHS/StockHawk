@@ -15,4 +15,5 @@ public class AppConstants {
     public static final String JSON_CHANGE_PERCENTAGE = "ChangeinPercent";
     public static final String JSON_BID = "Bid";
     public static final String SYMBOL = "symbol";
+    public static final String BASE_URL = "https://query.yahooapis.com/v1/public/yql?q=";
 }

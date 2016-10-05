@@ -64,11 +64,11 @@ public class StockWidgetRemoteViewService extends RemoteViewsService {
                 String symbol = mCursor.getString(mCursor.getColumnIndex(AppConstants.SYMBOL));
 
                 views.setTextViewText(R.id.stock_symbol, symbol);
-                views.setTextViewText(R.id.bid_price, mCursor.getString(mCursor.getColumnIndex("bid_price")));
-                views.setTextViewText(R.id.change, mCursor.getString(mCursor.getColumnIndex("percent_change")));
+                views.setTextViewText(R.id.bid_price, mCursor.getString(mCursor.getColumnIndex(QuoteColumns.BIDPRICE)));
+                views.setTextViewText(R.id.change, mCursor.getString(mCursor.getColumnIndex(QuoteColumns.PERCENT_CHANGE)));
 
 
-                if (mCursor.getInt(mCursor.getColumnIndex("is_up")) == 1) {
+                if (mCursor.getInt(mCursor.getColumnIndex(QuoteColumns.ISUP)) == 1) {
                     views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_green);
                 } else {
                     views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_red);

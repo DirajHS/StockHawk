@@ -26,6 +26,7 @@ import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.PeriodicTask;
 import com.google.android.gms.gcm.Task;
 import com.melnykov.fab.FloatingActionButton;
+import com.sam_chordas.android.stockhawk.AppConstants;
 import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
@@ -89,7 +90,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                 // do something on item click
                 Intent intent = new Intent(mContext, MyStockDetailsActivity.class);
                 mCursor.moveToPosition(position);
-                intent.putExtra("symbol", mCursor.getString(mCursor.getColumnIndex("symbol")));
+                intent.putExtra(AppConstants.SYMBOL, mCursor.getString(mCursor.getColumnIndex(AppConstants.SYMBOL)));
                 mContext.startActivity(intent);
               }
             }));
@@ -121,7 +122,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                   } else {
                     // Add the stock to DB
                     mServiceIntent.putExtra("tag", "add");
-                    mServiceIntent.putExtra("symbol", input.toString());
+                    mServiceIntent.putExtra(AppConstants.SYMBOL, input.toString());
                     startService(mServiceIntent);
                   }
                 }
