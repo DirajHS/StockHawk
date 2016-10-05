@@ -4,4 +4,12 @@
   <color name="material_blue_500">#2196F3</color>
   <color name="material_red_700">#D50000</color>
   <color name="material_green_700">#00C853</color>
+
+  <!-- Graph line colors -->
+  <color name="set">#0277BD</color>
+  <color name="stroke">#03A9F4</color>
+  <color name="dots">#eef1f6</color>
+  <color name="paint">#308E9196</color>
+  <color name="labels">#FF8E9196</color>
+
 </resources>
