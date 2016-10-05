@@ -6,10 +6,9 @@
   <color name="material_green_700">#00C853</color>
 
   <!-- Graph line colors -->
-  <color name="set">#0277BD</color>
-  <color name="stroke">#03A9F4</color>
-  <color name="dots">#eef1f6</color>
+  <color name="dot">#0277BD</color>
+  <color name="fill">#2d374c</color>
   <color name="paint">#308E9196</color>
-  <color name="labels">#FF8E9196</color>
+  <color name="labels">#6a84c3</color>
 
 </resources>

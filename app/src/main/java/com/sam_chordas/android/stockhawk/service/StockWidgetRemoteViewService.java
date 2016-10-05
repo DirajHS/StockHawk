@@ -1,10 +1,8 @@
 package com.sam_chordas.android.stockhawk.service;
 
-import android.app.Service;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Binder;
-import android.os.IBinder;
 import android.widget.AdapterView;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
